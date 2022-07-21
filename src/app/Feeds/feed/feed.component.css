@@ -1,0 +1,127 @@
+.Booknow {
+  border: 1px solid #96dac1;
+  border-radius: 10px;
+}
+
+.bar-progess {
+  height: 0.5rem;
+}
+
+#login-container {
+  padding: 20px;
+  border-radius: 5px;
+  background: #fffffb;
+  position: relative;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#login-container .profile-img {
+  height: 63px;
+  width: 63px;
+  background: url("https://images.unsplash.com/photo-1504933350103-e840ede978d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+#login-container .profile-images {
+  height: 105px;
+  width: 109px;
+  background: url("../../../assets/images/board.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#login-container h1 {
+  font-family: 'Sriracha', arial, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffc145;
+}
+
+#login-container .description {
+  margin-bottom: 20px;
+}
+
+#login-container .description p {
+  font-size: 12px;
+}
+
+.Hipbuttn {
+  border: 1px solid #96dac1;
+  border-radius: 10px;
+}
+
+.Pledge {
+  border-radius: 20px;
+  color: #fff;
+}
+
+.appstore_icon {
+  width: 83px;
+  height: 36px;
+}
+
+.imgcard {
+  border: none;
+  -webkit-box-shadow: 5px 5px 5px rgba(200, 200, 200, 0.5);
+          box-shadow: 5px 5px 5px rgba(200, 200, 200, 0.5);
+}
+
+.comment input {
+  border-radius: 3px;
+  padding: 9px;
+  border: 1px solid #5b5f97;
+  width: 90%;
+  font-size: 14px;
+}
+
+.bi-emoji-laughing {
+  position: relative;
+  top: 10px;
+  left: -25px;
+}
+
+.Chatimg {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.India-text {
+  font-size: 12px;
+}
+
+.title-card {
+  color: #96dac1;
+  line-height: 6px;
+}
+
+.body-card p {
+  font-size: 10px;
+}
+
+.cardslid {
+  border: none;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .BLOT h5 {
+    font-size: 10px;
+  }
+  .Chatimg {
+    height: 29px;
+    width: 20px;
+  }
+}
+
+@media screen and (min-device-width: 991px) and (max-device-width: 1199px) {
+  .Chatimg {
+    height: 39px;
+    width: 24px;
+  }
+}
+/*# sourceMappingURL=feed.component.css.map */

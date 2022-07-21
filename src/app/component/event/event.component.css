@@ -1,0 +1,86 @@
+.welcome {
+  background-color: #7068ab;
+  color: #fff;
+}
+
+.ViewEvents {
+  color: #41f058;
+}
+
+.welcome h5, p {
+  line-height: 30px;
+}
+
+.window {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.image {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  max-width: 65%;
+  border: 6px solid;
+  -webkit-animation: slide 20s infinite ease-in-out;
+          animation: slide 20s infinite ease-in-out;
+  margin: 14px;
+}
+
+.slider:hover .image {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -20%;
+  }
+  40% {
+    left: -40%;
+  }
+  60% {
+    left: -60%;
+  }
+  80% {
+    left: -80%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -20%;
+  }
+  40% {
+    left: -40%;
+  }
+  60% {
+    left: -60%;
+  }
+  80% {
+    left: -80%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+/*# sourceMappingURL=event.component.css.map */

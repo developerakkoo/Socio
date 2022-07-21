@@ -1,0 +1,63 @@
+.Music_Event{
+    position:absolute;
+    width: 50%;
+    top: 25%;    
+    color: #000000;
+    left: 10%;
+    h5{
+        font-weight: 700;
+        line-height: 19px;
+        
+    }
+    h1{
+        line-height: 60px;
+    }
+    p{font-weight: 500;
+        line-height: 57px;}
+}
+
+.Get_Tickets{
+    background: linear-gradient(-46deg,#ff965f 0,#f46262 100%);;
+    border: none;
+    border-radius: 25px;
+    color: #ffff;
+    padding: 2% 8%;
+    font-weight: 500;
+}
+
+//------------------------------
+.body_card{
+    h6{
+    font-weight: 500;
+    color: #96dac1;}
+    h5{
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+
+.Card1{
+    border-radius: 10px;
+    border: none;
+}
+
+
+.Card1:hover
+{ transform: translateY(-5px);}
+.card_footer{
+    background: #f5f5f5;
+    
+}
+.book{
+    border: none;
+    border: none;
+    background-color: #96dac1;
+    text-align: center;
+    border-radius: 7px;
+    color: #ffff;
+    transition:transform 0.5s;
+}

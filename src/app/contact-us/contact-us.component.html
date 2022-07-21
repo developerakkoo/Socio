@@ -1,0 +1,61 @@
+<div class="container  mt-5 pt-2">
+  
+
+
+
+    <div class=" m-3">
+        <div class="card-body">
+            <div class="mb-5 contact">
+                <h1>Contact Us</h1>
+        <p>For any queries, reach out to us at contact@Socio.com</p>
+            </div>
+        
+            <!-- [formGroup]="contactForm" -->
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                <div class="form-row ">
+                
+                    <div class="form-group col-6">
+                        <label class="LabelName"> NAME</label>
+                        <input type="text" formControlName="Name" ngModel class="form-control" [ngClass]="{ 'is-invalid': submitted && f.Name.errors }" />
+                        <div *ngIf="submitted && f.Name.errors" class="invalid-feedback">
+                            <div *ngIf="f.Name.errors.required"> Name is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group col-6">
+                        <label  class="LabelName">EMAIL </label>
+                        <input type="text" formControlName="email"ngModel class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                            <div *ngIf="f.email.errors.required">Email is required</div>
+                            <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row mt-3">
+                <div class="form-group col">
+                 <label for=""  class="LabelName"> YOUR PHONE NUMBER </label>
+                        <input (keypress)="keyPress($event)" required type="text" ngModel formControlName="phonenumber" class="form-control" placeholder="Enter Your phone Number" [ngClass]="{ 'is-invalid': submitted && f.phonenumber.errors }">
+                        <div *ngIf="submitted && f.phonenumber.errors" class="invalid-feedback">
+                        <div *ngIf="f.phonenumber.errors.required">Phone number is required</div>
+                        <div *ngIf="f.phonenumber.errors.pattern || f.phonenumber.errors.maxlength || f.phonenumber.errors.minlength">Phone number must be at least 10 numbers</div>
+                    </div>
+                </div>
+           </div>
+           <div class="form-row mt-3">
+                <div class="form-group col">
+                  <label  class="LabelName">YOUR QUERY</label>
+                    <textarea id="story" name="story" class="Str" rows="3" cols="120"  ngModel formControlName="query" class="form-control control_form  Long_query" [ngClass]="{ 'is-invalid': submitted && f.query.errors }"></textarea>
+                    <div *ngIf="submitted && f.query.errors" class="invalid-feedback">
+                        <div *ngIf="f.query.errors.required">Your Query is required</div>
+                    </div>
+                </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn  mr-1 send ">SEND</button>
+                   
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>

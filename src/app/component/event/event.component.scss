@@ -1,0 +1,67 @@
+
+
+.welcome {
+    background-color: #7068ab;
+    color: #fff;
+    
+}
+.ViewEvents{
+    color: #41f058;
+}
+.welcome h5, p{
+    line-height: 30px;
+}
+
+.window {
+  // height: 400px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  // border-radius: 20px;
+  // box-shadow: 0 0 20px 10px #0000002f, 0 0 10px 5px #00000017;
+}
+
+.slider {
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+
+.image {
+  position: relative;
+  flex: 0 0 20%;
+  max-width: 65%;
+  border: 6px solid ;
+  animation: slide 20s infinite ease-in-out;
+  margin: 14px;
+}
+
+.slider:hover .image {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -20%;
+  }
+  40% {
+    left: -40%;
+  }
+  60% {
+    left: -60%;
+  }
+  80% {
+    left: -80%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+ 
+  
+ 
+  

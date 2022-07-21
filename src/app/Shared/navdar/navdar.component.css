@@ -1,0 +1,28 @@
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+  color: #cec6c6;
+}
+
+.Sign {
+  background-color: #96dac1;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.linenav {
+  background-color: #5b5f97;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.iconin {
+  color: #fff;
+}
+/*# sourceMappingURL=navdar.component.css.map */

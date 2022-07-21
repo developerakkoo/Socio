@@ -1,0 +1,16 @@
+.send {
+  padding: 2% 7%;
+  border-radius: 36px;
+  background-color: #5b5f97;
+  color: #fff;
+}
+
+.contact h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.LabelName {
+  font-weight: 500;
+}
+/*# sourceMappingURL=contact-us.component.css.map */

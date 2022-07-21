@@ -1,0 +1,161 @@
+<div class="contener">
+<div class="col mt-5">
+  <div class="login-wrap mb-5">
+      <div class="login-html p-4">
+          <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1"
+              class="tab">Sign In</label>
+          <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign
+              Up</label>
+          <div class="login-form">
+              <div class="sign-in-htm">
+                  <div class="d-flex justify-content-around mt-3">
+                      <div class="item-container text-center ">
+                          <button><i class="fab fa-facebook-f"></i></button>
+                          <button><i class="bi bi-google"></i></button>
+                      </div>
+                  </div>
+                  <div class="hr"></div>
+               <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <div class="form-row mt-3">
+                        <div class="form-group col group">
+                            <label for="user" class="label mt-2 ">Email</label>
+                            <input type="text" id="user" name="email" formControlName="email"
+                                class="form-control input"
+                                [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                <div *ngIf="f.email.errors.required">Email is required</div>
+                                <div *ngIf="f.email.errors.email">Email must be a valid email address
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row mt-3">
+                        <div class="form-group col group">
+                            <label for="pass" class="label  mb-3">Password</label>
+                            <input type="password" id="pass" formControlName="password"ngModel
+                                data-type="password" class="form-control input"
+                                [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                <div *ngIf="f.password.errors.required">Password is required</div>
+                                <div *ngIf="f.password.errors.minlength">Password must be at least 6
+                                    characters</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foot-lnk mt-3">
+                        <a href="#forgot">Forgot Password?</a>
+                    </div>
+                    <div class="group mt-5">
+                        <input type="submit" class="button-sign" value="Login">
+                    </div>
+                </form>
+              </div>
+              <!--------------------------------------------------------------->
+              <div class="sign-up-htm">
+                  <div class="d-flex justify-content-around ">
+                      <div class="item-container text-center mt-3">
+                          <button><i class="fab fa-facebook-f"></i></button>
+                          <button><i class="bi bi-google"></i></button>
+                      </div>
+                  </div>
+                  <div class="hrs hr"></div>
+                  <form [formGroup]="signupForm" (ngSubmit)="onSubmites()">
+                    <div class="form-row">
+                        <div class="form-group col-6 group">
+                            <label for="user" class="label">First Name</label>
+                            <input type="text" id="user" formControlName="firstName"
+                                class="form-control input"
+                                [ngClass]="{ 'is-invalid': submitteded && f1.firstName.errors }" />
+                            <div *ngIf="submitteded && f1.firstName.errors" class="invalid-feedback">
+                                <div *ngIf="f1.firstName.errors.required">First Name is required</div>
+                            </div>
+                        </div>
+                        <div class="form-group col-6 group">
+                            <label for="user" class="label">Email</label>
+                            <input type="text" id="user" formControlName="email"
+                                class="form-control input"
+                                [ngClass]="{ 'is-invalid': submitteded && f1.email.errors }" />
+                            <div *ngIf="submitteded && f1.email.errors" class="invalid-feedback">
+                                <div *ngIf="f1.email.errors.required">Email is required</div>
+                                <div *ngIf="f1.email.errors.email">Email must be a valid email address
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-6 group">
+                            <label for="user" class="label">Password</label>
+                            <input type="password" id="user" formControlName="password"
+                                class="form-control input"
+                                [ngClass]="{ 'is-invalid': submitteded && f1.password.errors }" />
+                            <div *ngIf="submitteded && f1.password.errors" class="invalid-feedback">
+                                <div *ngIf="f1.password.errors.required">Password is required</div>
+                                <div *ngIf="f1.password.errors.minlength">Password must be at least 6
+                                    characters</div>
+                            </div>
+                        </div>
+                        <div class="form-group col-6 group">
+                            <label for="user" class="label">Password</label>
+                            <input type="password" id="user" formControlName="password"
+                                class="form-control input"
+                                [ngClass]="{ 'is-invalid': submitteded && f1.password.errors }" />
+                            <div *ngIf="submitteded && f1.password.errors" class="invalid-feedback">
+                                <div *ngIf="f1.password.errors.required">Password is required</div>
+                                <div *ngIf="f1.password.errors.minlength">Password must be at least 6
+                                    characters</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Account Type</p>
+
+                        <div class="redio d-flex justify-content-around">
+                            <div class="selecotr-item">
+
+                                <input type="radio" id="radio1" name="selector"
+                                    class="selector-item_radio" checked>
+                                <label for="radio1" class="selector-item_label"><i
+                                        class="bi bi-person-heart"></i></label>
+                            </div>
+                            <div class="selecotr-item">
+                                <input type="radio" id="radio2" name="selector"
+                                    class="selector-item_radio">
+                                <label for="radio2" class="selector-item_label"> <i
+                                        class="bi bi-person"></i></label>
+
+                            </div>
+
+                            <div class="selecotr-item">
+                                <input type="radio" id="radio3" name="selector"
+                                    class="selector-item_radio">
+                                <label for="radio3" class="selector-item_label"><i
+                                        class="bi bi-briefcase"></i></label>
+                            </div>
+                        </div>
+
+                        <div class="redio d-flex justify-content-around text-center">
+                            <label for="user" class="label ">ARTIST</label>
+                            <label for="user" class="label ml-4">FAN</label>
+                            <label for="user" class="label">BUSINESS</label>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="group mt-3">
+                        <input type="submit" class="button-sign" value="Sign Up">
+                    </div>
+                </form>
+                  <p style="font-size: 14px;
+            padding: 1% 13%;">By clicking Sign Up, you agree to our <a
+                          style="text-decoration:underline;">Terms & Conditions </a>and <a
+                          style="text-decoration:underline;">Privacy Policy</a></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+</div>
